@@ -1,4 +1,5 @@
-export default async function Page() {
+import  './styles/homepage.css';
+export default async function HomePage() {
   try {
     // Fetch data van de API
     const res = await fetch('https://fdnd-agency.directus.app/items/fabrique_art_objects', { cache: 'no-store' });
@@ -18,15 +19,22 @@ export default async function Page() {
     return (
       <section>
         <h1>Art Objects</h1>
-        <ul>
+        <ul class="masonry">
           {artObjects.map((artObject) => (
-            <li key={artObject.id}>
+            <li class="masonry-item" key={artObject.id}>
+              <figure>
               <img
-                src={'https://fdnd-agency.directus.app/assets/' + artObject.image}
+                src={'https://fdnd-agency.directus.app/assets/' + artObject.image} 
                 alt={artObject.title || 'Art Object'}
                 width={300}
-                height={200}
-              img/>
+                height={200} />
+             < img/>
+                <figcaption>
+                  <h2>{artObject.title}</h2>
+                  <a href="#" class="button">Meer info</a>
+                </figcaption>
+              </figure>
+              
             </li>
           ))}
         </ul>
