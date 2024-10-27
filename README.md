@@ -15,6 +15,9 @@ De instructie vind je in: [docs/INSTRUCTIONS.md](https://github.com/fdnd-task/ch
   * [Licentie](#licentie)
 
 ## Beschrijving
+
+De applicatie maakt gebruik van Next.js, een React-framework voor server-side rendering en het bouwen van statische websites.
+Dit zorgt voor snellere laadtijden en verbeterde prestaties.
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
